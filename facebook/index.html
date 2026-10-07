@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    
+    <nav class="navbar">
+
+        <div class="left-nav">
+            <div class="logo">Facebook</div>
+
+            <div class="search-box">
+                🔍
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="nav-icons">
+            <button>🏠</button>
+            <button>👥</button>
+            <button>▶️</button>
+            <button>🔔</button>
+            <button>💬</button>
+            <button>👤</button>
+        </div>
+
+    </nav>
+
+
+    
+    <main class="container">
+
+    
+        <aside class="sidebar">
+
+            <div class="profile">
+                <div class="avatar">C</div>
+                <strong>Chinonso</strong>
+            </div>
+
+            <div class="side-item">💬 charts</div>
+            <div class="side-item">👥 Friends</div>
+            <div class="side-item">💾 Saved</div>
+            <div class="side-item">📺 Videos</div>
+            <div class="side-item">📰 Reels</div>
+            <div class="side-item">⚙️ Settings</div>
+
+        </aside>
+
+
+        <!-- FEED -->
+        <section class="feed">
+
+            <!-- STORIES -->
+            <div class="stories">
+
+                <div class="story create-story">
+                    <div class="story-image">+</div>
+                    <p>Create story</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-image"></div>
+                    <p>Nonso</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-image"></div>
+                    <p>Helen</p>
+                </div>
+
+                <div class="story">
+                    <div class="story-image"></div>
+                    <p>Matthew</p>
+                </div>
+
+            </div>
+
+
+            
+            <div class="create-post">
+
+                <div class="post-input">
+                    <div class="avatar">C</div>
+
+                    <input
+                        type="text"
+                        id="postInput"
+                        placeholder="What's on your mind?"
+                    >
+                </div>
+
+                <div class="post-options">
+                    <button>📹 Live Video</button>
+                    <button>🖼️ Photo/Video</button>
+                    <button>😊 Feeling</button>
+                </div>
+
+                <button
+                    class="post-button"
+                    onclick="createPost()"
+                >
+                    
+                </button>
+
+            </div>
+
+
+            
+            <div id="posts">
+
+                <article class="post">
+
+                    <div class="post-header">
+                        <div class="avatar">J</div>
+
+                        <div>
+                            <strong>Nonso</strong>
+                            <small>2h · 🌎</small>
+                        </div>
+
+                    </div>
+
+                    <p class="post-text">
+                        Welcome to my new social media app! 🎉
+                    </p>
+
+                    <div class="post-image">
+                        🌎
+                    </div>
+
+                    <div class="post-stats">
+                        <span class="likes">0 likes</span>
+                        <span>0 comments</span>
+                    </div>
+
+                    <div class="post-actions">
+                        <button onclick="likePost(this)">👍 Like</button>
+                        <button onclick="commentPost(this)">💬 Comment</button>
+                        <button>↗️ Share</button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+
+            <h3>Contacts</h3>
+
+            <div class="contact">🟢 John Peter</div>
+            <div class="contact">🟢 Mary James</div>
+            <div class="contact">🟢 David Mike</div>
+            <div class="contact">🟢 Sarah</div>
+
+        </aside>
+
+    </main>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
